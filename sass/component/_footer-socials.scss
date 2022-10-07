@@ -1,0 +1,5 @@
+.footer-socials {
+  &__title {
+    @extend %footer-title;
+  }
+}

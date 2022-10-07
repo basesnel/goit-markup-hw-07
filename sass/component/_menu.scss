@@ -1,0 +1,27 @@
+.menu {
+  @extend %list;
+  display: flex;
+  gap: 50px;
+
+  &__link {
+    @extend %link;
+    @extend %nav-link;
+  }
+
+  &__link--current {
+    position: relative;
+    color: $accent-color;
+  }
+
+  &__link--current::after {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}

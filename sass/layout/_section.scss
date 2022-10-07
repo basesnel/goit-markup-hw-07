@@ -1,0 +1,11 @@
+.page-section {
+  padding: 96px 0 96px;
+
+  &--scnd-bg {
+    background-color: $scnd-bg-color;
+  }
+
+  &--no-top-padding {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.contacts {
+  @extend %list;
+  width: 230px;
+
+  &__item {
+    margin-bottom: 9px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    @extend %link;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    color: $footer-txt-color;
+    transition: color $animation-time $animation-function;
+  }
+
+  &__link--light {
+    @extend %link;
+    color: $prim-bg-color;
+  }
+}

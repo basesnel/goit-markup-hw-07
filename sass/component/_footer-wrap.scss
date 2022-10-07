@@ -1,0 +1,6 @@
+.footer-wrap {
+  @extend %container;
+  display: flex;
+  gap: 93px;
+  align-items: baseline;
+}

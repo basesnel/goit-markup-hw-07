@@ -1,0 +1,33 @@
+body {
+  font-family: $txt-roboto, $txt-sans;
+  letter-spacing: 0.03em;
+
+  background-color: $prim-bg-color;
+  color: $prim-txt-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+figure {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+// .container {
+//   width: 1200px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+// }
+
+.no-gap {
+  display: block;
+}

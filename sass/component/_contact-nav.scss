@@ -1,0 +1,30 @@
+.contact-nav {
+  @extend %list;
+  display: flex;
+  gap: 50px;
+
+  &__link {
+    @extend %link;
+    @extend %nav-link;
+    @extend %scnd-txt-color;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__icon {
+    @extend %icon;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+}

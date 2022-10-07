@@ -1,0 +1,32 @@
+.filters {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto 50px;
+
+  &__filter {
+    min-width: 73px;
+    max-width: 130px;
+    padding: 6px 22px;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: $prim-txt-color;
+    background-color: $scnd-bg-color;
+    transition: background-color $animation-time $animation-function,
+      box-shadow $animation-time $animation-function, color $animation-time $animation-function;
+  }
+
+  &__filter:hover,
+  &__filter:focus {
+    box-shadow: 0px 3px 1px $box-shadow5, 0px 1px 2px $box-shadow6, 0px 2px 2px $box-shadow1;
+    color: $prim-bg-color;
+    background-color: $accent-color;
+  }
+}
